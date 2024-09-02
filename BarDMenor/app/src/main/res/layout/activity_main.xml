@@ -13,7 +13,9 @@
     <ImageView
         android:layout_width="260dp"
         android:layout_height="260dp"
-        android:src="@drawable/logo_semfundo"/>
+        android:contentDescription="logoApk"
+        android:src="@drawable/logo_semfundo"
+        tools:ignore="HardcodedText" />
 
 
 </LinearLayout>
