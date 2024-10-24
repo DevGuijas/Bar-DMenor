@@ -12,6 +12,7 @@ import android.widget.ImageButton;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
@@ -23,6 +24,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.bardmenor.Adapter.AdapterLocalizacao;
 import com.example.bardmenor.model.Localizacao;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.navigation.NavigationBarView;
 import com.google.android.material.navigation.NavigationView;
 
 import java.util.ArrayList;
@@ -46,6 +48,8 @@ public class paginaPrincipal extends AppCompatActivity {
         bottomNavigationView = findViewById(R.id.bottomNavigationView);
         drawerLayout.setDrawerLockMode(DrawerLayout.LOCK_MODE_LOCKED_CLOSED);
 
+        bottomNavigationView.setSelectedItemId(R.id.endereco_bottom);
+
         buttonDrawerToggle.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -54,7 +58,7 @@ public class paginaPrincipal extends AppCompatActivity {
         });
 
         // Definindo o listener para os itens do NavigationView
-        navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+        /*navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 int itemId = item.getItemId();
@@ -73,19 +77,18 @@ public class paginaPrincipal extends AppCompatActivity {
                 }
                 return false;
             }
-        });
+        });*/
 
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 int itemId = item.getItemId();
                 if (itemId == R.id.home_bottom) {
-                    startActivity(new Intent(paginaPrincipal.this, paginaPrincipal.class));
-                    finish();
-                    return true;
-                } else if (itemId == R.id.cardapio_bottom) {
                     startActivity(new Intent(paginaPrincipal.this, Cardapio.class));
                     finish();
+                    return true;
+                } else if (itemId == R.id.endereco_bottom) {
+                    Toast.makeText(paginaPrincipal.this, "Você já se encontra em endereços!", Toast.LENGTH_SHORT).show();
                     return true;
                 }
                 return false;

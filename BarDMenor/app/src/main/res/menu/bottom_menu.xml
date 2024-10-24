@@ -6,20 +6,22 @@
         android:id="@+id/home_bottom"
         android:title="Principal"
         android:icon="@drawable/home"
+
         />
     <item
-        android:id="@+id/cardapio_bottom"
-        android:title="Cardápio"
-        android:icon="@drawable/cardapio"
+        android:id="@+id/endereco_bottom"
+        android:title="Endereços"
+        android:icon="@drawable/endereco"
+        android:enabled="true"
         />
 
     <item
-        android:id="@+id/favorito_bottom"
-        android:title="Favoritos"
-        android:icon="@drawable/favorito" />
-    <item
-        android:id="@+id/novidades__bottom"
+        android:id="@+id/novidades_bottom"
         android:title="Novidades"
         android:icon="@drawable/novidade" />
+    <item
+        android:id="@+id/perfil_bottom"
+        android:title="Perfil"
+        android:icon="@drawable/perfil" />
 
 </menu>

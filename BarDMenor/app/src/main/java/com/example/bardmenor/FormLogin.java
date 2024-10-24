@@ -84,7 +84,7 @@ public class FormLogin extends AppCompatActivity {
 
     // Função para abrir a página principal após o login
     private void abrirPaginaPrincipal() {
-        Intent intent = new Intent(FormLogin.this, paginaPrincipal.class);
+        Intent intent = new Intent(FormLogin.this, Cardapio.class);
         startActivity(intent);
         finish(); // Opcional, para remover a activity de login da pilha
     }
