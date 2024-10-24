@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/fotoLocalizacao"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/localizazao1"
+        android:layout_margin="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/nomeLocalizacao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bar Diolima para menores"
+        android:textSize="19sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintStart_toEndOf="@id/fotoLocalizacao"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/descricaoLocalizacao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/descricao_prod1"
+        android:textSize="13.5sp"
+        android:layout_marginStart="140dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="1dp"
+        android:maxLines="5"
+        app:layout_constraintTop_toBottomOf="@id/nomeLocalizacao"
+        app:layout_constraintStart_toEndOf="@id/fotoLocalizacao"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/marcarLocalizacao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Marcar localização"
+        android:textSize="18sp"
+        android:textColor="@android:color/holo_green_dark"
+        android:textStyle="bold"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintTop_toBottomOf="@id/descricaoLocalizacao"
+        app:layout_constraintStart_toEndOf="@id/fotoLocalizacao"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
