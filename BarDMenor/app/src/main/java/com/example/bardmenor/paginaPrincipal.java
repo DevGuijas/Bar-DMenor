@@ -90,6 +90,12 @@ public class paginaPrincipal extends AppCompatActivity {
                 } else if (itemId == R.id.endereco_bottom) {
                     Toast.makeText(paginaPrincipal.this, "Você já se encontra em endereços!", Toast.LENGTH_SHORT).show();
                     return true;
+                } else if (itemId == R.id.cupons_bottom){
+                    Toast.makeText(paginaPrincipal.this, "Por enquanto ainda não temos cupons de desconto!", Toast.LENGTH_SHORT).show();
+                } else if (itemId == R.id.perfil_bottom) {
+                    startActivity(new Intent(paginaPrincipal.this, perfil.class));
+                    finish();
+                    return true;
                 }
                 return false;
             }
@@ -106,9 +112,9 @@ public class paginaPrincipal extends AppCompatActivity {
         recyclerViewLocalizacoes.setAdapter(adapterLocalizacao);
 
         Localizacao localizacao1 = new Localizacao(
-                R.drawable.localizazao1,
-                "Bar Diolima para menores",
-                "Alameda Casa Branca, 92 - Jardim Paulista \nSão Paulo - SP, 01408-001 \nReferência: em frente ao My Fucking Comedy Club",
+                R.drawable.locbardmenor,
+                "Bar D Menores",
+                "AV. Elias Yazbek, 567 - Tingidor \nEmbu das Artes - SP, 06803-000 \nReferência: em frente ao centro automotivo Tyres World.",
                 "Marcar localização"
         );
 

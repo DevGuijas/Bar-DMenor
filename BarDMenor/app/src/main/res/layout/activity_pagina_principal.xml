@@ -8,7 +8,8 @@
     tools:openDrawer="start"
     android:id="@+id/drawerLayout"
     android:fitsSystemWindows="true"
-    tools:context=".paginaPrincipal">
+    tools:context=".paginaPrincipal"
+    android:background="#AC10FF">
 
     <include
         layout="@layout/activity_pagina_principal_content"/>

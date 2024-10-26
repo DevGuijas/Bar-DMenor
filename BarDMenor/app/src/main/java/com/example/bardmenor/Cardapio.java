@@ -82,6 +82,12 @@ public class Cardapio extends AppCompatActivity {
                     startActivity(new Intent(Cardapio.this, paginaPrincipal.class));
                     finish();
                     return true;
+                } else if (itemId == R.id.cupons_bottom){
+                    Toast.makeText(Cardapio.this, "Por enquanto ainda não temos cupons de desconto!", Toast.LENGTH_SHORT).show();
+                } else if (itemId == R.id.perfil_bottom) {
+                    startActivity(new Intent(Cardapio.this, perfil.class));
+                    finish();
+                    return true;
                 }
                 return false;
             }
@@ -101,134 +107,134 @@ public class Cardapio extends AppCompatActivity {
         CardapioItens hotdog1 = new CardapioItens(
                 R.drawable.hotdog1,
                 "Hot Dog",
-                "Um delicioso cachorro quente paulista! Com muitooo purê de batata inglesa e um rio de molhos à sua escolha! Acompanha batata palha ou vinagrete, uma salsicha, milho e ervilha.",
-                "19,00"
+                "Um delicioso cachorro quente paulista! Com muitooo purê de batata inglesa e um rio de molhos à sua escolha! Acompanha batata palha ou vinagrete, uma salsicha, milho e ervilha. \n\nAprox. 120g",
+                "12,00"
         );
 
         CardapioItens hotdog2 = new CardapioItens(
                 R.drawable.hotdog2,
                 "Hot Dog prensado",
-                "O melhor prensado passando na sua tela! Acompanha duas salsichas, molhos a sua escolha, batata palha e queijo.",
-                "14,00"
+                "O melhor prensado passando na sua tela! Acompanha duas salsichas, molhos a sua escolha, batata palha e queijo. \n\nAprox. 130g",
+                "15,00"
         );
 
         CardapioItens hamburguer1 = new CardapioItens(
                 R.drawable.hamburguer1,
                 "Burguer D'menor ",
-                "O mais pedido dos últimos meses! O D'menor é uma explosão de sabores e cores.",
-                "14,00"
+                "O mais pedido dos últimos meses! O D'menor é uma explosão de sabores e cores. \n\nAprox. 180g",
+                "18,00"
         );
 
         CardapioItens hamburguer2 = new CardapioItens(
                 R.drawable.hamburguer2,
                 "X-burguer",
-                "Clássico hambúrguer com carne suculenta, queijo derretido, alface e tomate, servido no pão macio.",
-                "14,00"
+                "Clássico hambúrguer com carne suculenta, queijo derretido, alface e tomate, servido no pão macio. \n\nAprox. 160g",
+                "16,99"
         );
 
         CardapioItens hamburguer3 = new CardapioItens(
                 R.drawable.hamburguer3,
                 "X-egg",
-                "Hambúrguer tradicional com carne, queijo e um ovo frito, trazendo uma combinação deliciosa.",
-                "14,00"
+                "Hambúrguer tradicional com carne, queijo e um ovo frito, trazendo uma combinação deliciosa. \n\nAprox. 160g",
+                "16,99"
         );
 
         CardapioItens hamburguer4 = new CardapioItens(
                 R.drawable.hamburguer4,
                 "X-tudo",
-                "A versão completa do hambúrguer com carne, queijo, presunto, bacon, ovo e salada.",
-                "14,00"
+                "A versão completa do hambúrguer com carne, queijo, presunto, bacon, ovo e salada. \n\nAprox. 170g",
+                "21,50"
         );
 
         CardapioItens hamburguer5 = new CardapioItens(
                 R.drawable.hamburguer5,
                 "X-salada",
-                "Hambúrguer leve com carne, queijo e uma porção generosa de salada fresca.",
-                "14,00"
+                "Hambúrguer leve com carne, queijo e uma porção generosa de salada fresca. \n\nAprox. 160g",
+                "16,99"
         );
 
         CardapioItens isca1 = new CardapioItens(
                 R.drawable.iscas1,
                 "Iscas de frango ao molho rosê",
-                "Tiras de frango empanado crocante, acompanhadas de molho rosê cremoso.",
-                "14,00"
+                "Tiras de frango empanado crocante, acompanhadas de molho rosê cremoso. \n\nAprox. 200g",
+                "29,99"
         );
 
         CardapioItens fritas1 = new CardapioItens(
                 R.drawable.fritas1,
                 "Batata frita tradicional",
-                "Batatas crocantes e douradas, perfeitas para acompanhar qualquer prato.",
-                "14,00"
+                "Batatas crocantes e douradas, perfeitas para acompanhar qualquer prato. \n\nAprox. 190g",
+                "19,99"
         );
 
         CardapioItens fritas2 = new CardapioItens(
                 R.drawable.fritas2,
                 "Batata frita com queijo e bacon",
-                "Batatas fritas cobertas com queijo derretido e pedaços crocantes de bacon.",
-                "14,00"
+                "Batatas fritas cobertas com queijo derretido e pedaços crocantes de bacon. \n\nAprox. 210g",
+                "26,99"
         );
 
         CardapioItens pastel1 = new CardapioItens(
                 R.drawable.pasteis1,
                 "Mini pastéis Mistos (Carne e frango)",
-                "Mini Pastéis crocantes recheados com carne e frango, uma explosão de sabores.",
-                "14,00"
+                "Mini Pastéis crocantes recheados com carne e frango, uma explosão de sabores. \n\nAprox. 190g",
+                "27,99"
         );
 
         CardapioItens bqueijo1 = new CardapioItens(
                 R.drawable.bolinhadequeijo1,
                 "Bolinha de queijo com Ketchup da casa",
-                "Bolinhas de queijo empanadas, acompanhadas de um ketchup artesanal da casa.",
-                "14,00"
+                "Bolinhas de queijo empanadas, acompanhadas de um ketchup artesanal da casa. \n\nAprox. 200g",
+                "19,50"
         );
 
         CardapioItens drink1 = new CardapioItens(
                 R.drawable.drink1,
                 "Virgin Mary (Sem álcool)",
-                "Versão sem álcool do Bloody Mary, com tomate, especiarias e um toque de limão.",
-                "14,00"
+                "Versão sem álcool do Bloody Mary, com tomate, especiarias e um toque de limão. \n\nPor 1 shot",
+                "13,99"
         );
 
         CardapioItens drink2 = new CardapioItens(
                 R.drawable.drink2,
                 "Drink D'Menor (Sem álcool)",
-                "Especialidade da casa com visual roxo, decorado com folhas aromáticas, refrescante e único.",
-                "14,00"
+                "Especialidade da casa com visual roxo, decorado com folhas aromáticas, refrescante e único. \n\nPor 1 shot",
+                "16,50"
         );
 
         CardapioItens drink3 = new CardapioItens(
                 R.drawable.drink3,
                 "Piña colada (sem álcool)",
-                "Combinação cremosa de abacaxi e leite de coco, trazendo o sabor do Caribe.",
-                "14,00"
+                "Combinação cremosa de abacaxi e leite de coco, trazendo o sabor do Caribe. \n\nPor 1 shot",
+                "13,99"
         );
 
         CardapioItens drink4 = new CardapioItens(
                 R.drawable.drink4,
                 "Blueberry Mint Fizz (sem álcool)",
-                "Refrescante mistura de mirtilo e hortelã com um toque efervescente.",
-                "14,00"
+                "Refrescante mistura de mirtilo e hortelã com um toque efervescente. \n\nPor 1 shot",
+                "13,99"
         );
 
         CardapioItens drink5 = new CardapioItens(
                 R.drawable.drink5,
                 "Girger Ale (sem álcool)",
-                "Bebida leve e refrescante com um toque de gengibre.",
-                "14,00"
+                "Bebida leve e refrescante com um toque de gengibre. \n\nPor 1 shot",
+                "13,99"
         );
 
         CardapioItens drink6 = new CardapioItens(
                 R.drawable.drink6,
                 "Sangria (Sem álcool)",
-                "Uma versão sem álcool da tradicional bebida de frutas, leve e saborosa.",
-                "14,00"
+                "Uma versão sem álcool da tradicional bebida de frutas, leve e saborosa. \n\nPor 1 shot",
+                "12,60"
         );
 
         CardapioItens drink7 = new CardapioItens(
                 R.drawable.drink7,
                 "Virgin Mojito (sem álcool)",
-                "Versão sem álcool do mojito, com hortelã, limão e um toque de gás.",
-                "14,00"
+                "Versão sem álcool do mojito, com hortelã, limão e um toque de gás. \n\nPor 1 shot",
+                "19,99"
         );
 
         // Adicionando itens à lista

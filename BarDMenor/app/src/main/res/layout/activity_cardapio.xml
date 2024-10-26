@@ -7,7 +7,8 @@
     tools:openDrawer="start"
     android:id="@+id/drawerLayout"
     android:fitsSystemWindows="true"
-    tools:context=".Cardapio">
+    tools:context=".Cardapio"
+    android:background="#AC10FF">
 
     <!-- Layout principal com BottomAppBar e BottomNavigationView -->
     <androidx.coordinatorlayout.widget.CoordinatorLayout
@@ -15,7 +16,7 @@
         android:layout_height="match_parent">
 
         <include
-            layout="@layout/cardapio_contents"/>
+            layout="@layout/cardapio_contents" />
 
         <!-- Conteúdo principal -->
         <FrameLayout

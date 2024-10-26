@@ -16,8 +16,8 @@
         />
 
     <item
-        android:id="@+id/novidades_bottom"
-        android:title="Novidades"
+        android:id="@+id/cupons_bottom"
+        android:title="Cupons"
         android:icon="@drawable/novidade" />
     <item
         android:id="@+id/perfil_bottom"
